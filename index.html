@@ -5,189 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KoalaT.ai - Revolutionizing Medical Device Quality with AI</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .toggle-content { display: none; }
+        .toggle-content.active { display: block; }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <header class="bg-white shadow-md">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="Frame 3 white.png" alt="KoalaT.ai Logo" class="h-8 w-auto mr-4">
-                <a href="#" class="text-xl font-semibold text-gray-800">KoalaT.ai</a>
-            </div>
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="#" class="text-gray-600 hover:text-blue-500">Home</a>
-                <a href="#" class="text-gray-600 hover:text-blue-500">Services</a>
-                <a href="#" class="text-gray-600 hover:text-blue-500">Resources</a>
-                <a href="#" class="text-gray-600 hover:text-blue-500">AI Agents</a>
-                <a href="#" class="text-gray-600 hover:text-blue-500">Blog</a>
-                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Schedule a Free Consultation</a>
-            </div>
-        </nav>
-    </header>
+    <div class="max-w-6xl mx-auto p-6">
+        <header class="mb-12">
+            <nav class="flex justify-between items-center">
+                <img src="Frame 3 white.png" alt="KoalaT.ai Logo" class="h-12 w-auto">
+                <div class="space-x-4">
+                    <a href="https://koalat.ai/services/" class="text-blue-600 hover:text-blue-800">Services</a>
+                    <a href="#ai-tools" class="text-blue-600 hover:text-blue-800">AI Tools</a>
+                    <a href="https://pro.koalat.ai/" class="text-blue-600 hover:text-blue-800">Newsletter</a>
+                    <a href="https://koalat.ai/blog/" class="text-blue-600 hover:text-blue-800">Blog</a>
+                    <a href="https://koalat.ai/contact/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Contact Us</a>
+                </div>
+            </nav>
+        </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="bg-blue-600 text-white py-20">
-            <div class="container mx-auto px-6 text-center">
+        <main>
+            <section class="mb-16">
                 <h1 class="text-4xl font-bold mb-4">KoalaT.ai: Revolutionizing Medical Device Quality with AI</h1>
-                <p class="text-xl mb-8">Streamline Your Processes, Reduce Risks, and Achieve Excellence.</p>
-                <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100">Schedule a Free Consultation</a>
-            </div>
-        </section>
+                <p class="text-xl mb-8">Streamline Your Processes, Reduce Risks, and Achieve Excellence in Medical Device Quality and Compliance.</p>
+                <div class="flex space-x-4">
+                    <a href="https://koalat.ai/services/" class="bg-blue-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-600">Explore Our Services</a>
+                    <a href="#ai-tools" class="bg-green-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-600">Try Our AI Tools</a>
+                </div>
+            </section>
 
-        <!-- Featured Services -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-semibold text-center mb-8">Our Services</h2>
+            <section id="featured-service" class="mb-16 bg-blue-100 p-8 rounded-lg">
+                <h2 class="text-3xl font-semibold mb-4">Featured Service: Audit Readiness Bootcamp</h2>
+                <p class="text-lg mb-6">Transform your audit preparation process and boost your confidence in facing regulatory inspections.</p>
+                <ul class="list-disc pl-5 mb-6">
+                    <li>Master FDA inspection strategies</li>
+                    <li>Learn advanced ISO audit preparation techniques</li>
+                    <li>Gain hands-on experience with AI-powered audit tools</li>
+                </ul>
+                <a href="https://pro.koalat.ai/" class="bg-blue-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-600">Enroll Now</a>
+            </section>
+
+            <section id="services" class="mb-16">
+                <h2 class="text-3xl font-semibold mb-6">Our Services</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4">Quality Systems</h3>
-                        <p>Optimize your quality management processes with expert guidance and AI-powered tools.</p>
-                    </div>
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4">Audit Readiness</h3>
-                        <p>Prepare for regulatory audits with confidence using our comprehensive programs and AI-driven insights.</p>
-                    </div>
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4">Supplier Quality</h3>
-                        <p>Enhance your supplier management with our data-driven analytics and consulting services.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Audit Readiness Checklist Generator GPT -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-semibold mb-4">Generate Your Custom Audit Checklist</h2>
-                <p class="text-lg mb-8">Get ready for your next FDA inspection with our AI-powered checklist generator.</p>
-                <a href="https://chat.openai.com/g/g-be5AIj9Wy-koalat-ai-audit-checklist-generator" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Try it Now!
-                </a>
-            </div>
-        </section>
-
-        <!-- CAPA Assistant GPT -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-semibold mb-4">Master CAPA Investigations with AI</h2>
-                <p class="text-lg mb-8">Our CAPA Assistant guides you through every step, from root cause analysis to corrective action planning.</p>
-                <a href="https://chat.openai.com/g/g-i8Wm6vkfc-koalat-ai-capa-assistant" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Try it Now!
-                </a>
-            </div>
-        </section>
-
-        <!-- Supplier Quality Guardian GPT -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-semibold mb-4">Master Supplier Quality with AI</h2>
-                <p class="text-lg mb-8">Our Supplier Quality Guardian guides you through qualification, risk assessment, and performance monitoring.</p>
-                <a href="https://chat.openai.com/g/g-y9Wr8MHrd-supplier-quality-guardian" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Try it Now!
-                </a>
-            </div>
-        </section>
-
-        <!-- Resource Library Preview -->
-        <section class="py-16 bg-gray-100">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-semibold text-center mb-8">Resource Library</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Essential Checklist for a Robust QMS</h3>
-                        <p class="mb-4">Comprehensive checklist for implementing and maintaining a robust quality management system.</p>
-                        <a href="#" class="text-blue-500 hover:underline">Download Now</a>
+                        <h3 class="text-xl font-semibold mb-4">Quality Systems Excellence</h3>
+                        <p>Achieve regulatory compliance and operational efficiency with our AI-driven quality management solutions.</p>
+                        <button class="mt-4 text-blue-500 hover:text-blue-700 font-semibold toggle-btn" data-target="quality-systems-content">Learn More</button>
+                        <div id="quality-systems-content" class="toggle-content mt-4">
+                            <ul class="list-disc pl-5">
+                                <li>Reduce non-conformities by up to 40%</li>
+                                <li>Streamline documentation processes</li>
+                                <li>Enhance overall product quality and safety</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Conquer FDA Inspections: A Step-by-Step Guide</h3>
-                        <p class="mb-4">Detailed guide to preparing for and excelling in FDA inspections in the medical device industry.</p>
-                        <a href="#" class="text-blue-500 hover:underline">Download Now</a>
+                        <h3 class="text-xl font-semibold mb-4">Audit-Ready Assurance</h3>
+                        <p>Face regulatory audits with confidence and achieve successful outcomes through our comprehensive preparation programs.</p>
+                        <button class="mt-4 text-blue-500 hover:text-blue-700 font-semibold toggle-btn" data-target="audit-readiness-content">Learn More</button>
+                        <div id="audit-readiness-content" class="toggle-content mt-4">
+                            <ul class="list-disc pl-5">
+                                <li>Increase audit success rate by 30%</li>
+                                <li>Minimize disruptions to operations during audits</li>
+                                <li>Develop a culture of continuous compliance</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Build Your Ideal Supplier Profile: A Customizable Template</h3>
-                        <p class="mb-4">Customizable template for evaluating, qualifying, and managing medical device suppliers.</p>
-                        <a href="#" class="text-blue-500 hover:underline">Download Now</a>
+                        <h3 class="text-xl font-semibold mb-4">Supplier Quality Optimization</h3>
+                        <p>Elevate your supplier network performance and minimize risks with our data-driven management approach.</p>
+                        <button class="mt-4 text-blue-500 hover:text-blue-700 font-semibold toggle-btn" data-target="supplier-quality-content">Learn More</button>
+                        <div id="supplier-quality-content" class="toggle-content mt-4">
+                            <ul class="list-disc pl-5">
+                                <li>Reduce supplier-related quality issues by 25%</li>
+                                <li>Optimize supplier selection and performance monitoring</li>
+                                <li>Enhance supply chain resilience and compliance</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- AI Agents Showcase -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-semibold text-center mb-8">Our AI Agents</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4">QMS Analyzer</h3>
-                        <p>AI-powered tool for analyzing and optimizing quality management systems.</p>
-                        <a href="#" class="mt-4 inline-block text-blue-500 hover:underline">Learn More</a>
+            <section id="ai-tools" class="mb-16">
+                <h2 class="text-3xl font-semibold mb-6">AI Agents Showcase</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <h4 class="text-lg font-semibold mb-2">Audit Checklist Generator</h4>
+                        <p class="mb-4 flex-grow">Create comprehensive, tailored audit checklists in minutes. Ensure nothing is overlooked in your next FDA inspection.</p>
+                        <a href="https://chat.openai.com/g/g-be5AIj9Wy-koalat-ai-audit-checklist-generator" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center">
+                            Generate Your Checklist
+                        </a>
                     </div>
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4">Audit Assistant</h3>
-                        <p>Virtual assistant for guiding you through the audit preparation process.</p>
-                        <a href="#" class="mt-4 inline-block text-blue-500 hover:underline">Learn More</a>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <h4 class="text-lg font-semibold mb-2">CAPA Assistant</h4>
+                        <p class="mb-4 flex-grow">Streamline your Corrective and Preventive Action process with AI-powered root cause analysis and action planning.</p>
+                        <a href="https://chat.openai.com/g/g-i8Wm6vkfc-koalat-ai-capa-assistant" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center">
+                            Optimize Your CAPA Process
+                        </a>
                     </div>
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-4">Supplier Risk Predictor</h3>
-                        <p>AI model for predicting and mitigating risks in your supplier network.</p>
-                        <a href="#" class="mt-4 inline-block text-blue-500 hover:underline">Learn More</a>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <h4 class="text-lg font-semibold mb-2">Supplier Quality Guardian</h4>
+                        <p class="mb-4 flex-grow">Enhance supplier management with AI-driven risk assessment, performance monitoring, and qualification processes.</p>
+                        <a href="https://chat.openai.com/g/g-y9Wr8MHrd-supplier-quality-guardian" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-center">
+                            Elevate Supplier Quality
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Testimonials -->
-        <section class="py-16 bg-gray-100">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-semibold text-center mb-8">What Our Clients Say</h2>
+            <section id="resources" class="mb-16">
+                <h2 class="text-3xl font-semibold mb-6">Resources</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <p class="mb-4">"KoalaT.ai's expertise helped us streamline our audit processes and significantly reduce findings. Highly recommended!"</p>
-                        <p class="font-semibold">- [Placeholder Name, Title, Company]</p>
+                        <h3 class="text-xl font-semibold mb-4">Understanding CAPA in Medical Devices</h3>
+                        <p class="mb-4">Learn about Corrective and Preventive Action (CAPA) processes and their importance in the medical device industry.</p>
+                        <a href="#" class="text-blue-500 hover:underline">Read More</a>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <p class="mb-4">"The AI-driven insights provided by KoalaT.ai have transformed our quality management system. We've seen a marked improvement in efficiency and compliance."</p>
-                        <p class="font-semibold">- [Placeholder Name, Title, Company]</p>
+                        <h3 class="text-xl font-semibold mb-4">CAPA Form Template</h3>
+                        <p class="mb-4">Download our customizable CAPA form template to streamline your quality management processes.</p>
+                        <a href="#" class="text-blue-500 hover:underline">Download Now</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">KoalaT.ai's Audit & Compliance Knowledge Hub</h3>
+                        <p class="mb-4">Explore a curated collection of answers to your most pressing questions about medical device quality and compliance, powered by Perplexity AI.</p>
+                        <a href="https://www.perplexity.ai/collections/koalat-ai-audit-a1N8d_IgQMmDwhyo2cYL6Q" target="_blank" class="text-blue-500 hover:underline">Explore the Knowledge Hub</a>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-wrap justify-between">
-                <div class="w-full md:w-1/4 mb-6 md:mb-0">
-                    <h3 class="text-lg font-semibold mb-2">KoalaT.ai</h3>
-                    <p>Empowering medical device quality and compliance with AI-driven solutions.</p>
-                </div>
-                <div class="w-full md:w-1/4 mb-6 md:mb-0">
-                    <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
-                    <ul>
-                        <li><a href="#" class="hover:text-blue-300">Home</a></li>
-                        <li><a href="#" class="hover:text-blue-300">Services</a></li>
-                        <li><a href="#" class="hover:text-blue-300">Resources</a></li>
-                        <li><a href="#" class="hover:text-blue-300">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="w-full md:w-1/4 mb-6 md:mb-0">
-                    <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
-                    <p>Email: info@koalat.ai</p>
-                    <p>Phone: 747-333-6955</p>
-                </div>
-                <div class="w-full md:w-1/4">
-                    <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="hover:text-blue-300">LinkedIn</a>
-                        <a href="#" class="hover:text-blue-300">Twitter</a>
-                        <a href="#" class="hover:text-blue-300">Facebook</a>
+            <section id="coming-soon" class="mb-16 bg-yellow-100 p-6 rounded-lg">
+                <h2 class="text-3xl font-semibold mb-4">Coming Soon</h2>
+                <p class="text-lg mb-4">We're constantly innovating to bring you the best in medical device quality and compliance. Stay tuned for these upcoming features:</p>
+                <ul class="list-disc pl-5">
+                    <li>AI-Powered Risk Management Tool</li>
+                    <li>Virtual Reality Audit Training Simulator</li>
+                    <li>Predictive Quality Analytics Dashboard</li>
+                </ul>
+            </section>
+
+            <section id="testimonials" class="mb-16">
+                <h2 class="text-3xl font-semibold mb-6">What Our Clients Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="mb-4 italic">"KoalaT.ai's expertise helped us streamline our audit processes and significantly reduce findings. Their AI tools are truly game-changing for our quality management system."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="mb-4 italic">"The AI-driven insights provided by KoalaT.ai have transformed our supplier management approach. We've seen a marked improvement in efficiency and compliance across our supply chain."</p>
                     </div>
                 </div>
+            </section>
+        </main>
+
+        <footer class="text-center text-gray-600">
+            <div class="mb-4">
+                <a href="https://www.linkedin.com/company/koalat-ai/" target="_blank" class="text-blue-500 hover:text-blue-700 mr-4">Company LinkedIn</a>
+                <a href="https://www.linkedin.com/in/neelank-tiwari/" target="_blank" class="text-blue-500 hover:text-blue-700 mr-4">Personal LinkedIn</a>
+                <a href="https://www.youtube.com/@KoalaTeaWithNeel" target="_blank" class="text-blue-500 hover:text-blue-700 mr-4">YouTube</a>
+                <a href="https://x.com/WeAreKoalaTea" target="_blank" class="text-blue-500 hover:text-blue-700">Twitter</a>
             </div>
-            <div class="mt-8 text-center">
-                <p>&copy; 2024 KoalaT.ai. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+            <p class="mb-2">Visit our main website: <a href="https://koalat.ai/" class="text-blue-500 hover:text-blue-700">KoalaT.ai</a></p>
+            <p class="mb-2">Subscribe to our <a href="https://pro.koalat.ai/" class="text-blue-500 hover:text-blue-700">Weekly Newsletter</a></p>
+            <p class="mb-4">Explore our <a href="https://koalat.ai/audio/" class="text-blue-500 hover:text-blue-700">Audio Content</a></p>
+            <p class="mb-2">Phone: 747-333-6955</p>
+            <p class="mb-4">Email: info@koalat.ai</p>
+            <p>&copy; 2024 KoalaT.ai. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = document.getElementById(button.dataset.target);
+                content.classList.toggle('active');
+                button.textContent = content.classList.contains('active') ? 'Show Less' : 'Learn More';
+            });
+        });
+    </script>
 </body>
 </html>
