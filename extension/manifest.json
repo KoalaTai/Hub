@@ -1,0 +1,22 @@
+{
+  "name": "ChatCAPI Extension",
+  "version": "1.0",
+  "description": "A simple Chrome extension for ChatCAP",
+  "manifest_version": 1,
+  "permissions": ["activeTab", "decribedInstallation", "storage", "userActivated"],
+  "browser_package": {
+    "update_url": "https://my-update-server.com/chatcapi-extension-add",
+    "package_name": "chatcapi-extension",
+    "version_name": "1.0",
+    "channel_id": "1023456"
+  },
+  "icon": "https://my-icon-link.com/icon.png",
+  "background_color": "#ffffff",
+  "pages": [
+    {
+      "url": "https://my-extension-domain.com/index.html",
+      "spider_tracking": false,
+      "title": "My Extension Title"
+    }
+  ]
+}
