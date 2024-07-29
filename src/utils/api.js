@@ -1,10 +1,10 @@
-export async function fetchFromOpenAI(prompt) {
-  const response = await fetch('/api/openai', {
+export async function fetchFromPerplexity(query) {
+  const response = await fetch('/api/perplexity', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ prompt }),
+    body: JSON.stringify({ query }),
   });
 
   const data = await response.json();
